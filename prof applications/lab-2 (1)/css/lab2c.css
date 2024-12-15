@@ -1,0 +1,70 @@
+.entete_pied{
+     width:100%;
+     height:10%;
+	  position: fixed;  /* avec static les paramètres de la position n'ont pas d'effet  */
+     background-color:#FFFF00;
+     z-index: 100;	  /* la boite rouge passe devant la boite entête (13>10), mettre une valeur > 10 pour éviter le problème*/
+}
+#entete_page{
+    top:0px;
+    left:0px;
+ }
+
+#pied_page{
+   bottom:0%;
+   left:0px;
+}
+/* Modifier la propriété position de élément de la DIV avec l'id "main"
+   pour voir le changement de sa position dans la page.
+*/
+#main{
+   width:80%;
+	 height:200%;
+	 padding: 5px;
+	 background-color:#663366;
+	 color: #00FF00;
+	 position: absolute;
+	 top:10%;
+   left:10%;
+   overflow: scroll;
+}
+
+/* Modifier la propriété position des éléments ci-dessous en lui
+   affectant une des valeurs suivantes : static, fixed et relative 
+   Modifier la propriété z-index pour fixer l'élément qui sera en premier 
+   plan en cas de superposition. 
+   Avec la valeur relative le point de coordonnées (0, 0) ne se trouve plus en haut à gauche
+   de votre fenêtre, mais en haut à gauche de la position actuelle de votre élément.
+*/
+.boite{
+  
+	width:200px;
+	height: 200px;
+	color:white;
+}
+
+#rouge{  /* avec la valeur fixed, cette boite reste toujours visible */
+  position:absolute;
+  background-color:#FF0000;
+  top:310px;
+  left:10px;
+  z-index: 80;
+  /* display:none; /* cette boite n'est pas visible */
+
+}
+
+#vert {  
+  position:absolute;
+  background-color:#00FF00;
+  top:330px;
+  left:30px;
+  z-index: 20; /* Jouer sur ces valeurs pour modifier l'ordre de vibilité des boites */
+}
+#bleu{
+  position:absolute;
+  background-color:#0000FF;
+  top: 350px;
+  left: 50px;
+  z-index: 40;/* Jouer sur ces valeurs pour modifier l'ordre de vibilité des boites */
+}
+

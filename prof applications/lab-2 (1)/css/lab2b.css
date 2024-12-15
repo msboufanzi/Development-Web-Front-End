@@ -1,0 +1,30 @@
+.im { 
+float:right;
+ margin: 10px;
+ width: 60%; /* height sera fixé automatiquement */
+ } 
+		
+.p1 { 
+float:left;
+   background-color:#FF0;
+   width: 20%;
+   height: 200px;
+   border: 20px solid red;
+   margin-left: 10px;
+   margin-right: 10px;
+   padding: 5px;
+   overflow: auto; 
+   
+}	
+p { text-align:justify;
+}
+.p2 { 
+    clear:both;
+    background-color:#F0F;
+
+}	
+.p3 { 
+    background-color:#0FF;
+   
+}			
+	

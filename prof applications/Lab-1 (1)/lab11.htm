@@ -1,0 +1,83 @@
+<!doctype html>
+<html>
+<head>
+	 <meta  charset="utf-8" />	
+	 <title>Listes + liens</title>
+</head>
+<body>
+	<!-- ajouter un signet -->
+	<a name="hautpage">
+	<h1> Liens vers des paragraphes en bas </h1>
+	<p>
+		<a href="#paragraphefondements">Les fondements</a>
+	</p>
+	<p>
+		<a href="#paragrapheattributs">Les attributs</a>
+	</p>
+	<h1> Utilisation des listes </h1>
+	<!-- liste numérotée le type fixe une numérotation avec des lettres en majuscule
+		la numérotation commence par la lettre f (1:a, 2:b,....,6:f) -->
+	<!-- on utilise ici le type par défaut (1,2,3 ...)
+		la valeur de départ est 1 --> 
+	<!-- la numérotation continue   après fermeture de la liste englobante  -->  
+
+	<ul type="square" >
+		<li> les types: 
+			<ol  type="i" >
+				<li> type 1 </li>
+				<li> type 2
+					<ol >
+						<li>
+							sous type 1
+						</li>
+						<li>
+							sous type 2
+						</li>
+					</ol>				
+				</li>
+				<li> type 3 </li>
+				<li> type 4 </li>
+			</ol>
+		</li>
+		<li> les formations </li>
+		<!-- liste hiérarchisée -->
+		<dl>
+			<dt>Licence</dt>
+				<dd>bac+3</dd>
+				<dd>bac+4</dd>
+				<dd>bac+5</dd>
+			<dt>CI</dt>
+				<dd>bac+3</dd>
+				<dd>bac+4</dd>
+				<dd>bac+5</dd>		
+		</dl>
+		<li> Les prix</li>
+	</ul>
+	
+	<!-- ajouter des lignes vides -->
+	<br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
+	<br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
+
+	<hr>
+	<a name="paragraphefondements">Les fondements</a><br/>
+	Un des fondements de base du langage html, l’élément permet de définir le type d’action ou de traitement à appliquer sur un contenu visé. 
+	l’élément est toujours compris entre des crochets < >, on appelle alors cet ensemble balise. 
+	l’action ou le traitement appliqué par un élément peut-être nuancé par des attributs, inclus eux aussi dans les balises.
+
+	<br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
+	<br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
+		
+	<a href="#hautpage"> Aller vers d&eacute;but de page </a>
+	<hr>
+	<a name="paragrapheattributs">les attributs</a>
+
+	Les attributs sont en quelque sorte des propriétés permettant de nuancer, de compléter, 
+	de préciser ou de décrire l’action d’un élément. presque tous les éléments ont leur liste d’attributs attitrés.
+
+	<br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
+	<br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
+
+	<a href="#hautpage"> Aller vers d&eacute;but de page </a>
+</body>
+
+</html>

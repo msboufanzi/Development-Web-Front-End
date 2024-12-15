@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>CC1</title>
+  <meta charset="UTF-8" />
+  <style>
+    table, th, td{ border: #230200 3px solid; }
+    body>div {
+      width:800px; height: 400px;
+      margin:auto; border:#303000 3px solid;
+    }
+    table {
+      float:left;
+      border-collapse: collapse;
+    }
+    table, div>div {
+      width : 40%; height: 60%;
+      margin: 10% 2.5% 10% 2.5%;
+    }
+    div div{
+      float:right;
+      border:#000 3px dashed;
+    }
+    div>ol {
+      list-style-type: decimal;
+    }
+
+    thead th :hover {
+        background-color: yellow;
+        color: white;
+    }
+    thead td :hover {
+        background-color: red;
+        color: white;
+    }
+    
+
+  </style>
+</head>
+<body>
+  <div>
+    <table>
+      <thead>
+        <tr>
+          <th colspan=6>A</th>
+        </tr>
+      </thead>
+      <td rowspan=5 >B</td>
+      </tr>
+      <tr>
+        <td rowspan=2>C</td>
+        <td colspan=2>D</td>
+        <td colspan=2>3</td>
+      </tr>
+      <tr>
+        <td>1</td>
+        <td>2</td>
+        <td>3</td>
+        <td>4</td>
+      </tr>
+      <tr>
+        <td rowspan=2 >F</td>
+        <td colspan=2>G</td>
+        <td colspan=2>H</td>
+      </tr>
+      <tr>
+        <td colspan=2>1</td>
+        <td colspan=2>J</td>
+      </tr>
+      <tfoot>
+        <tr>
+          <td colspan=6>H</td>
+        </tr>
+      </tfoot>
+    </table>
+    <div>
+      <ol>
+        <li>Type 1</li>
+        <ol>
+          <li>Sous type 1</li>
+          <li>Sous type 2</li>
+        </ol>
+        <li>Type 2</li>
+        <li>Type 3</li>
+        <li>Type 4</li>
+      </ol>
+    </div>
+  </div>
+</body>
+</html>

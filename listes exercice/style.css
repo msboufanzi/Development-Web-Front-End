@@ -1,0 +1,194 @@
+/* Styling for the main title (h1) */
+h1 {
+  background-color: #fdd835;
+  color: black;
+  text-align: center;
+  width: 80%;
+  padding: 5px;
+  margin: 0 auto;
+  border-radius: 20px;
+  font-weight: bold;
+  border-bottom: none;
+  box-shadow: none;
+  transition: all 0.3s ease;
+}
+
+h1:hover {
+  border-bottom: 10px solid #000;
+  box-shadow: 0 6px 8px rgba(0, 0, 0, 0.3);
+}
+
+/* Container styling for the full body */
+.full-body {
+  margin: auto;
+  width: 60%;
+  height: 500px;
+  overflow-y: auto;
+  border: 3px solid #1c1c7d;
+  box-shadow: 7px 14px 5px rgba(0, 0, 0, 0.3);
+  padding-left: 32px;
+}
+
+/* Styling for highlighted words with <mark> */
+mark {
+  background-color: #8c8c11;
+  color: white;
+}
+
+/* Class for the "HTML" and "Etc" items in nested lists */
+.html,
+.etc,
+.merise,
+.struct-general {
+  color: white;
+  background-color: #009696;
+}
+
+/* Styling for main list with Roman numeral counters */
+.main-list {
+  list-style-type: upper-roman;
+  counter-reset: main-counter;
+}
+
+.main-list > li {
+  counter-increment: main-counter;
+  list-style-type: none;
+}
+
+.main-list > li::before {
+  content: counter(main-counter, upper-roman) ". ";
+}
+
+/* Styling for the "Développement Web" nested list */
+.dev-web-list {
+  list-style-type: none;
+  counter-reset: sub-counter;
+}
+
+.dev-web-list > li {
+  counter-increment: sub-counter;
+  list-style-type: none;
+}
+
+.dev-web-list > li::before {
+  content: "II." counter(sub-counter) " ";
+}
+
+/* Styling for nested "Côté Client" list items in "Développement Web" */
+.cote-client-list {
+  list-style-type: none;
+  counter-reset: inner-counter;
+}
+
+.cote-client-list > li {
+  counter-increment: inner-counter;
+}
+
+.cote-client-list > li::before {
+  content: "II.1-" counter(inner-counter, lower-alpha) " ";
+}
+
+/* Styling for the "Bases Des Données" nested list */
+.db-list {
+  list-style-type: none;
+  counter-reset: db-counter;
+}
+
+.db-list > li {
+  counter-increment: db-counter;
+  list-style-type: none;
+}
+
+.db-list > li::before {
+  content: "III." counter(db-counter) " ";
+}
+
+/* Styling for nested "Conception" list items in "Bases Des Données" */
+.conception-list {
+  list-style-type: none;
+  counter-reset: db-inner-counter;
+}
+
+.conception-list > li {
+  counter-increment: db-inner-counter;
+}
+
+.conception-list > li::before {
+  content: "III.1-" counter(db-inner-counter, lower-alpha) " ";
+}
+
+/* Highlighted item for "Conception" title in "Bases Des Données" */
+.conception {
+  color: white;
+  background-color: #2aefc8;
+}
+
+/* Styling for the "Réseau informatique" nested list */
+.network-list {
+  list-style-type: none;
+  counter-reset: network-counter;
+}
+
+.network-list > li {
+  counter-increment: network-counter;
+  list-style-type: none;
+}
+
+.network-list > li::before {
+  content: "IV." counter(network-counter) " ";
+}
+
+/* Styling for nested "Protocoles" list items in "Réseau informatique" */
+.protocol-list {
+  list-style-type: none;
+  counter-reset: protocol-counter;
+}
+
+.protocol-list > li {
+  counter-increment: protocol-counter;
+}
+
+.protocol-list > li::before {
+  content: "IV.3-" counter(protocol-counter, lower-alpha) " ";
+}
+
+/* Highlighted item for "HTTP" in "Protocoles" */
+.http {
+  background-color: red;
+  color: white;
+}
+
+/* Styling for the "Système D'exploitation" nested list */
+.os-list {
+  list-style-type: none;
+  counter-reset: os-counter;
+}
+
+.os-list > li {
+  counter-increment: os-counter;
+  list-style-type: none;
+}
+
+.os-list > li::before {
+  content: "V." counter(os-counter) " ";
+}
+
+/* Styling for nested "Architecture" list items in "Système D'exploitation" */
+.architecture-list {
+  list-style-type: none;
+  counter-reset: arch-counter;
+}
+
+.architecture-list > li {
+  counter-increment: arch-counter;
+}
+
+.architecture-list > li::before {
+  content: "V.1-" counter(arch-counter, lower-alpha) " ";
+}
+
+/* Specific styling for the "Architecture" title in "Système D'exploitation" */
+.struct-general {
+  color: white;
+  background-color: #009696;
+}

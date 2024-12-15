@@ -1,0 +1,140 @@
+div {
+    text-align: center;
+}
+
+/* Ajouter pour le titre */
+h1 {
+    width: 100%;  /* Pour que le titre prenne toute la largeur */
+    text-align: center;
+}
+
+th{
+    text-align: center;
+    font-size: large;
+    margin: auto;
+    background-color: black;
+    color: white;
+    border: #000000 1px ;
+    border-style: dashed;
+
+}
+caption{
+    text-align: center;
+    font-size: large;
+  
+}
+table{
+    width:100%;
+    
+    
+}
+td
+{
+    border: #000000 1px ;
+    border-style: dashed;
+}
+
+/* // border rouge a tous qui vide */
+
+
+td:empty{
+    border: 3px red solid;
+
+}
+tr{
+    background-color: #79b2c6;
+    
+}
+tr:nth-child(4n+2) td,
+tr:nth-child(4n+3) td {
+    background-color: #95d2d9;
+}
+.selected-cell {
+    border: 3px dashed blue !important;
+}
+
+
+#left{
+    overflow-y:scroll;
+    overflow-x:scroll;
+    width: 40%;
+    border: 3px solid black;
+    border-collapse:collapse ;
+    box-sizing: border-box;  /* Ajout */
+    min-height: 100%; /* Pour garantir la hauteur minimale */
+    position: relative; /* Pour le positionnement de l'espace en bas */
+
+}
+
+#left::after {
+    content: '';
+    display: block;
+    height: 150px; /* Espace souhaité en bas */
+}
+
+#all{
+    width: 100%;
+    display: flex;  /* Ajout */
+    flex-wrap: wrap;  /* Ajout */
+    
+}
+#midle{
+    width: 20%;
+    display: flex;  /* Ajout */
+    justify-content: center;  /* Ajout */
+    align-items: center;  /* Ajout */
+}
+
+#right{
+    width: 40%;
+     /* La hauteur est 50% de la hauteur de la div gauche */
+     height: 18vw;
+    border: 5px solid black;
+    border-style: dotted;
+    border-radius: 5%;
+    box-sizing: border-box;  /* Ajout */
+    padding: 20PX;
+    justify-content: center;
+    text-align: center;
+   
+    
+
+}
+
+
+ul {
+    list-style-type: disc;
+    
+}
+
+li {
+  
+    padding: 5px;
+    margin: 2px 0;
+}
+
+li:first-child, li:last-child {
+    background-color:#7fae87;
+}
+#controls {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+body {
+    margin: 0;
+    padding: 30px;
+}
+
+#switchBtn {
+    font-size: 3rem;           /* Increase font size */
+   
+   
+    cursor: pointer;           /* Change cursor to pointer on hover */
+    transition: transform 0.2s, background-color 0.2s; /* Smooth effects */
+  }
+
+
+  

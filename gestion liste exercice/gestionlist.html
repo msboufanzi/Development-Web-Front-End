@@ -1,0 +1,68 @@
+<html lang="en">
+<head>
+<script type="text/javascript" src="glst.js"></script>
+<link rel="stylesheet" href="glst.css" />
+<meta charset="utf-8">
+<title>Liste ...</title>
+</head>
+<body >
+ 
+
+
+<div  id="all">
+
+    <h1> Gestion d'une liste</h1>
+
+    <div id= "txt">
+      <input type="text" placeholder="Nom de l'element a ajouter">
+      <input type="button" value="Ajouter" onclick="fct1()">
+      
+    </div>
+
+    <div id="second">
+        <label for=""> Ajouter:</label>
+        <input type="radio" name="choix" id ="choix1"value="begin" checked >
+        <label for="inp1">  Au debut</label>
+        <input type="radio" name="choix" id ="choix2"value="end">
+        <label for="inp1">  Au la fin</label>
+
+
+    </div>
+    <div id="tab">
+        <table class="tab" cellspacing ="0">
+        <tr>
+            <td> Element 1</td>
+            <td><input type="Button" class="update" value="Modifier"
+                onclick="update(this)"> </td>
+                <td><input type="Button" class="delete" value="Supprimer"
+                onclick="remove(this)"> </td>
+        </tr>
+        <tr >
+            <td> Element 2</td>
+            <td><input type="Button" class="update" value="Modifier"
+                onclick="update(this)"> </td>
+                <td><input type="Button" class="delete" value="Supprimer"
+                onclick="remove(this)"> </td>
+        </tr>
+        <tr >
+            <td> Element 3</td>
+            <td><input type="Button" class="update" value="Modifier"
+                onclick="update(this)"> </td>
+                <td><input type="Button" class="delete" value="Supprimer"
+                onclick="remove(this)"> </td>
+        </tr>
+
+        </table>
+    </div>
+
+      
+
+
+
+
+
+</div>
+    
+
+</body>
+</html>

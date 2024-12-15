@@ -1,0 +1,39 @@
+body{ 
+    background-color:#46c3e9
+}
+p{ 
+    width:70%; 
+    height:300px;
+    text-align: left; 
+    font-size:120%; 
+    background-color:#69dfd9; 
+    color:white;
+    margin-left:auto; 
+    margin-right:auto; 
+    border: #000 5px dotted; 
+    border-radius: 15px 0 15px 0;
+
+    padding: 10px; 
+    box-shadow: 5px 5px 3px 5px #8d8c8d;  
+}
+    
+h1{ 
+    background-color:yellow ; 
+    color:maroon;  
+}
+
+    
+.imageFond{ 
+    Background-image:url('../images/logo_W3C.gif');
+    background-repeat: no-repeat;
+    background-position: center center ;
+    background-color: greenyellow;
+    background-size: 90% 90%; 
+    width: auto;   
+}
+
+#degradejr{
+    background:linear-gradient(45deg, yellow,green,red);
+}			 
+
+				

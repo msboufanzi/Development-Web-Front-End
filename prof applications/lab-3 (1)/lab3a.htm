@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">    
+    <title>JS 1 (JS intégré)</title>
+    
+    <script>
+        // Afficher une boite de dialogue avant l'affichage de la page
+        function message(){ 
+             window.alert("Message: chargement de la page. ");  
+        }
+
+    </script>
+</head>
+<body onload="message()"> 
+
+    <h1> Début du document</h1>
+	<SCRIPT >
+        // Écrire dans le flux de document        
+        document.write(" <H2>Ce titre est inséré par JavaScript</H2>");
+        document.write(" <P> Ce paragraphe est inséré par JavaScript </P>");
+
+        // Afficher sur la console
+        console.log("JS 1 (JS intégré)")
+    </SCRIPT>
+   
+    <h1> fin de document</h1>
+
+</body>
+</html>

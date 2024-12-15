@@ -1,0 +1,38 @@
+div, h1{
+    text-align: center;
+    padding: auto;
+    }
+
+tr:nth-child(2n+1){
+    background-color: rgb(231, 225, 225);
+    }
+table {
+    width:50%;
+    margin: auto;
+    overflow-y:scroll;
+    }
+input{
+        margin: 5px;
+        }
+    
+    
+#all{
+    display: inline-block;
+    border-style: dashed;
+    overflow-y:scroll;
+    align-content: center;
+  
+    overflow: auto;
+    width:60%;
+ 
+   
+    
+
+
+
+
+    
+    
+}
+
+

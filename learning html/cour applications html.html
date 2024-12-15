@@ -1,0 +1,267 @@
+
+<!--
+
+All HTML documents must start with a document type declaration: <!DOCTYPE html>.
+
+The HTML document itself begins with <html> and ends with </html>.
+
+The visible part of the HTML document is between <body> and </body>.
+
+ 
+ 
+ -->
+
+<!DOCTYPE html><!--The <!DOCTYPE> declaration represents the document type, and helps browsers to display web pages correctly.
+
+It must only appear once, at the top of the page (before any HTML tags).-->
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <title>title</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<!-- we can put inside body things that we want to be aplicated on all body like color font  links color and a lot  -->
+<body 
+
+
+
+bgcolor="#abcdef"   
+
+
+
+>
+<h2 id="section1">Section 1</h2>
+<p>Contenu de la section 1...</p>
+
+    <!--HTML headings are defined with the <h1> to <h6> tags.-->
+        <h1> head 1</h1>
+        <h2>head 6</h2>
+
+
+
+
+
+        <!--HTML paragraphs are defined with the <p> tag:-->
+            <p >paragraphs hello world i wanna become a good person</p>
+            <!-- The HTML <pre> element defines preformatted text. he text inside a <pre> element is displayed in a fixed-width font 
+                (usually Courier), and it preserves both spaces and line breaks:-->
+                <pre > hamza x hamza 
+                    hanane x hanane 
+                    fahde . fahd, 
+                    m
+                </pre>
+            <!-- attribut de balise p 
+
+        
+              align: permet l'alignement du texte ={"left", " right", "center", "justify"}.
+
+              Cependant, cet attribut est désapprouvé (deprecated) dans HTML5. Il est recommandé d'utiliser du CSS pour gérer les alignements.
+            
+            -->
+             <p align = "right"> im right  </p>
+
+             <!--
+              L'attribut id est utilisé pour identifier de manière unique un élément HTML.
+              L'attribut class permet de regrouper des éléments pour les styliser ou manipuler via CSS/JavaScript.
+              L'attribut style permet d'ajouter des styles CSS directement sur l'élément.
+             -->
+              <p id="first"> hello w1</p>
+              <p class="second"> hello w2</p>
+              <p style="color: brown;"> hello w3 </p>
+
+            <!--
+              L'attribut lang définit la langue du contenu .
+              L'attribut title fournit une information supplémentaire (souvent visible en survolant avec la souris).
+            
+            -->
+              <p lang="en"> hello </p>
+              <p title="hahowa test"> test</p>
+
+
+               <!-- Balise <hr>
+                  Définition : Insère une ligne horizontale pour séparer visuellement des sections d'information.
+
+                -->
+                 <p style="color: red; font-family:fantasy;">Section 1</p>
+                 <hr>
+                <p style="font-size:x-large; font-family: Arial, Helvetica, sans-serif;">Section 2</p>
+
+                <!-- Balises <strong>, <em>, <mark>
+            Définition : Utilisées pour mettre en avant du texte.
+            <strong> : Marque un texte comme important, souvent en gras.
+            <em> : Met un texte en emphase, souvent en italique.
+            <mark> : Met en évidence un texte, souvent avec un fond coloré.
+               <del> : Texte supprime Affiche un texte barré pour indiquer qu'il a été supprimé.
+                <ins> : Texte inséré Souligne un texte pour indiquer qu'il a été ajouté.
+                <sub> : Indice (texte en bas) Affiche un texte en tant qu'indice, souvent utilisé en mathématiques ou en chimie.
+                 <sup> : Exposant (texte en haut) Affiche un texte en tant qu'exposant, souvent utilisé pour les puissances ou les unités.
+                -->
+                
+              <p><strong>Texte important</strong>
+                <em>Texte en italique</em>
+                <mark>Texte surligné</mark>
+                <del>texte deleted </del>
+                <ins> text incerer</ins>
+            </p><br><p>Formule chimique de l'eau : H<sub>2</sub>O.</p>
+            <p>10<sup>2</sup> = 100.</p> <br>
+
+        
+
+
+            <!--HTML links are defined with the <a> tag:-->
+                <a href="https://google.com"> lets go to google</a>
+                <!--HTML images are defined with the <img> tag. -->
+                <!--   target :
+
+               Définit où ouvrir le lien ou afficher le contenu cible.
+                Valeurs possibles : uf you didnt do no target it will open in the same page
+                _blank : Ouvre dans un nouvel onglet. !!! 
+                L’attribut target="_blank" peut poser des risques de sécurité (attaque de redirection malveillante) s'il n’est pas combiné avec rel="noopener".
+                _self : Ouvre dans le même onglet (valeur par défaut).
+                _parent : Ouvre dans le contexte parent immédiat (utile dans des iframes).
+                _top : Ouvre dans le contexte de navigation principal (utile pour sortir d'un iframe).
+                -->
+                <a href="https://boufanzi.site/clothing-brands"  target="_blank"> Legacy Revive </a>
+
+                <!-- HTML Links - Use an Image as a Link
+                To use an image as a link, just put the <img> tag inside the <a> tag:-->
+          
+            <br> 
+
+                  <!--The source file (src), alternative text (alt), width, and height are provided as attributes:-->
+                  <a href="https://youtube.com" target="_blank"><img src="thebatman.webp" alt="check the picture" width="450" height="600"></a>
+<br>
+
+                <!-- Link to an Email AddressUse mailto: inside the href attribute to create a link that opens the user's email program (to let them send a new email):-->
+                 <a href="mailto:mohamedsboufanzi@gmail.com" target="_blank"> send mail
+               </a> <br>
+               <!-- Button as a Link To use an HTML button as a link, you have to add some JavaScript code.-->
+               <button onclick="location.href='https://google.com'">google</button>
+              
+                
+               <!-- Create a Bookmark in HTML Bookmarks can be useful if a web page is very long.
+                To create a bookmark - first create the bookmark, then add a link to it.
+                When the link is clicked, the page will scroll down or up to the location with the bookmark.-->
+
+
+
+                <!-- HTML Link Colors
+                By default, a link will appear like this (in all browsers):
+
+               An unvisited link is underlined and blue
+               A visited link is underlined and purple
+               An active link is underlined and red
+               You can change the link state colors, by using CSS:-->
+
+               <style>
+                a:link {
+                  color: green;
+                  background-color: transparent;
+                  text-decoration: none;
+                }
+                
+                /* a:visited {
+                  color: pink;
+                  background-color: transparent;
+                  text-decoration: none;
+                } */
+                
+                a:hover {
+                  color: red;
+                  background-color: transparent;
+                  text-decoration: underline;
+                }
+                
+                a:active {
+                  color: yellow;
+                  background-color: transparent;
+                  text-decoration: underline;
+                }
+                </style>
+
+
+                <br>
+<!--- Utilisation comme signet
+En assignant un identifiant à une section avec l'attribut id, vous pouvez utiliser <a> pour y naviguer.
+Exemple : check the section is the first thing in our body
+-->
+<a href="#section1">Aller à la section 1</a>
+
+<!-- Images can improve the design and the appearance of a web page.
+src - Specifies the path to the image
+alt - Specifies an alternate text for the image
+You can use the style attribute to specify the width and height of an image.
+Images on Another Server/Website put the link in src
+Animated Images gif png webp 
+Image Floating Use the CSS float property to let the image float to the right or to the left of a text:
+ -->
+
+ 
+ <img src ="shape.webp" alt ="shape" width="128" height="128" > 
+
+
+<p><img src="shape.webp" alt="Smiley face" style="float:right;width:42px;height:42px;">
+  The image will float to the right of the text.</p>
+
+
+
+
+<!-- HTML Elements:
+An HTML element is defined by a start tag, some content, and an end tag.-->
+
+<!--Note: Some HTML elements have no content (like the <br> element). These elements are called empty elements.
+ Empty elements do not have an end tag!-->
+<!--The <br> tag defines a line break, and is an empty element without a closing tag:-->
+ <P> Iam batman <br> the city needs me </P>
+
+
+
+ <!-- HTML tags are not case sensitive: <P> means the same as <p>. we recommond to use lowercase-->
+
+
+
+<!--  HTML Attributes:All HTML elements can have attributes
+Attributes provide additional information about elements &are always specified in the start tag & name/value pairs like: name="value"
+
+
+All HTML elements can have attributes:
+The href attribute of <a> specifies the URL of the page the link goes to
+The src attribute of <img> specifies the path to the image to be displayed
+The width and height attributes of <img> provide size information for images
+The alt attribute of <img> provides an alternate text for an image
+The style attribute is used to add styles to an element, such as color, font, size, and more
+The lang attribute of the <html> tag declares the language of the Web page
+The title attribute defines some extra information about an element
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+-->
+
+
+
+
+
+
+
+
+<!-- the style is big is css  What is CSS?
+            Cascading Style Sheets (CSS) is used to format the layout of a webpage 
+            Tip: The word cascading means that a style applied to a parent element will also apply to all children elements within the parent.
+            CSS can be added to HTML documents in 3 ways:
+            Inline - by using the style attribute inside HTML elements
+            Internal - by using a <style> element in the <head> section
+            External - by using a <link> element to link to an external CSS file
+             -->
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>

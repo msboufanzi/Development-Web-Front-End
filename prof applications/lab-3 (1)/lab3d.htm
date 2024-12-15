@@ -1,0 +1,64 @@
+
+<!DOCTYPE html>
+<html>
+ <HEAD>
+	<TITLE>JS 4</TITLE>
+	<META charset="UTF-8" />
+	<SCRIPT type="text/javascript" src="./js/lab3d.js"></SCRIPT>
+ </HEAD>
+ <BODY>	
+    
+    Cliquez sur le bouton pour cacher/rendre visible le formulaire en bas:
+    <BR/> <BR/>
+    <!-- on associe au clic sur le bouton la fonction f31() -->
+    <input type="button" id="bt" style="color:red;" value="Cacher" onclick="f41()" >
+    <BR/>
+   
+    <FORM id="formGr" style="border: 3px solid #000; padding: 1%; width: 50%; margin-left: auto; margin-right: auto;">
+        <!-- la sélection set affichée sur la zone texte -->
+        Faire un choix:<BR/>
+        <select id="myList" style="margin: 10px 0 10px 0;" onchange="f42()">
+            <option>Groupe1 </option>
+            <option>Groupe2</option>
+            <option>Groupe3</option>
+        </select>
+        <input type="button" value="Add option" onclick="f44()">
+        <br><br>
+        <input type="text" name="" id="updateindex" placeholder="N° de l'option "> <input type="button" value="Update" onclick="update()">
+        <br><br>
+        Choix du groupe <input type="text" id="groupe" size="15">
+    </FORM>	
+
+	<P id="intro">  
+        Le formulaire est visible. 
+    </P>
+
+    <!--  // Voir le résultat sur la console. -->
+    <script>   
+  
+        // Le résultat du code en bas sera affiché sur la console: lister les éléments HTML de cette page
+		// nodeType est un nombre. - Élément (1) - Attribut (2)  - Texte (3)  - Commentaire (8)
+		// nodeName pour un noeud élément c'est le nom de la balise, pour un noeud attribut c'est le nom de l'attribut et pour un noeud texte c'est #text          
+
+        var x = document.body.childNodes;
+		for (var i= 0; i < x.length; i++) 
+			 console.log(x[i].nodeName+', '+x[i].nodeType);
+		
+        // Information de l'élement p à la fin du document
+        var x = document.getElementById("intro");
+		var txt = "";
+		txt += "Node name: " + x.nodeName + ", ";
+		txt += "Node innerHTML: " + x.innerHTML + ", ";
+		txt += "Node type: " + x.nodeType+"";
+		console.log(txt);
+
+    </script>
+    <!-- les éléments en bas ne s'affichent pas sur la console -->
+    <!-- Conteneur du résultat : Paramètres affichés suite à un double clic -->
+    <div id="navpara" ondblclick="f43()" style="width: 50%;margin-left: 25%;  background-color: aqua;"> 
+        <h1>Paramètres du navigateur : </h1>
+     </div> 
+    
+</BODY>
+
+</html>

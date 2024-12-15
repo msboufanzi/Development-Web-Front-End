@@ -1,0 +1,31 @@
+
+#hello {
+    border: 2px solid blue; /* Adds a blue border around the table */
+    border-radius: 0px; /* Rounds the corners of the table */
+    width: 50%; /* Sets the table width to 50% of its container */
+    margin: auto; /* Centers the table horizontally */
+    text-align: center; /* Aligns text within table cells */
+  }
+  
+  .bor {
+    border: 2px solid rgb(255, 255, 255);
+    border-collapse: collapse ;  /*This will make the borders collapse into a single border */
+    background-color: #96D4D4;
+
+    border-radius : 10px;
+    /* The following values are allowed: With the border-style property, you can set the appearance of the border.
+
+    dotted     
+    dashed     
+    solid     
+    double     
+    groove     
+    ridge     
+    inset     
+    outset     
+    none     
+    hidden     
+    Example */
+    border-style:dashed ;
+
+  }

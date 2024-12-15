@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<HTML>
+<HEAD>
+	<TITLE>JS 2 (JS externe)</TITLE>
+	<META charset="UTF-8" />	
+	<SCRIPT type="text/javascript" src="./js/lab3b.js"></SCRIPT>
+</HEAD>
+
+<BODY onload="alert('Page  -'+document.title+'-chargée par le navigateur')">
+	<h1> début de document</h1>
+	<h2> Appel d'une fonction</h2>
+	<SCRIPT >		
+			
+		// Saisir a et b
+		a = parseInt(window.prompt("Taper le a : "))
+		b = parseInt(prompt("Taper le b : "))
+
+        // Former la chaine de caractères: 
+		var str = ""
+		for(i=a;i<=b;i++)
+		   str+=""+i+"+";
+		
+		str+=" = "+somme(a,b)
+		// ou encore : str+" = "+appliquer(somme,a,b)
+		// Ecrire le résultat dans le flux du document HTML (Ajouter un élément h3)
+		document.write("<h3> "+str+"<\h3>");
+			
+	</SCRIPT>
+	<h1> fin de document</h1>
+		
+</BODY>
+</HTML>
+

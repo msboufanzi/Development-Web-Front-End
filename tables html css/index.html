@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <title>title</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!--tableau:
+tr stans dor qa table row.
+td stands for table data.
+make sure that the number of cells are the same in each row.
+th stands for table header. By default, the text in <th> elements are bold and centered, but you can change that with CS
+Note: A table cell can contain all sorts of HTML elements: text, images, lists, links, other tables, etc.
+<caption>	Defines a table caption
+
+HTML Table Borders: all on css you can manuplate them
+
+HTML Table Sizes: Use the style attribute with the width or height properties to specify the size of a table, row or column.
+exemple1 :Note: Using a percentage as the size unit for a width means how wide will this element be compared to its parent element,
+ which in this case is the <body> element.
+exemple2:To set the height of a specific row, add the style attribute on a table row element
+
+Vertical Table Headers exemple3
+Header for Multiple Columns
+
+HTML Table Padding & Spacing
+
+
+rowspan $$$ colspan
+Note: The value of the colspan attribute represents the number of columns to span.
+Note: The value of the rowspan attribute represents the number of rows to span.
+
+HTML Table - Zebra Stripes To style every other table row element, use the :nth-child(even) selector like this:
+Note: If you use (odd) instead of (even), the styling will occur on row 1,3,5 etc. instead of 2,4,6 etc. exemple 4
+
+Horizontal Dividers :If you specify borders only at the bottom of each table row, you will have a table with horizontal dividers.
+Hoverable Table: Use the :hover selector on tr to highlight table rows on mouse over:
+The <colgroup> element is used to style specific columns of a table.
+
+
+
+-->
+
+<table class="bor" style="width:75%" >
+<th class="bor"> table1 </th>
+<tr> 
+  <td class="bor"> 11 </td>
+  <td class="bor" style="width:50%"> 12 </td>
+  <td class="bor"> 13 </td>
+</tr>
+
+<tr>
+<td class="bor"> 21 </td>
+<td class="bor"> 22 </td>
+<td class="bor"> 23 </td>
+</tr>
+
+
+</table>
+
+<table id="hello">
+  <caption > table2 </caption>
+  <tr style="height: 90px;" > 
+    <td   > 11  </td>
+    <td> 12 </td>
+    <td> 13 </td>
+  </tr>
+  
+  <tr> 
+  <td> 21 </td>
+  <td> 22 </td>
+  <td> 23 </td>
+  </tr>
+  
+  
+  </table>
+
+
+  <table class="cal">
+    <tr>
+        <th class="cal" rowspan="2">lundi</th>
+        <td class="cal">matin</td>
+        <td class="cal">soir</td>
+    </tr>
+    <tr>
+       
+        <td class="cal">matin</td>
+        <td class="cal">soir</td>
+    </tr>
+  </table>
+
+  <table class="test">
+    <tr >
+    <th>First Name</th>
+    <th>Last Name</th>
+    <th>Points</th>
+    </tr>
+    <tr>
+    <td>Peter</td>
+    <td>Griffin</td>
+    <td>$100</td>
+    </tr>
+    <tr>
+    <td>Lois</td>
+    <td>Griffin</td>
+    <td>$150</td>
+    </tr>
+    <tr>
+    <td>Joe</td>
+    <td>Swanson</td>
+    <td>$300</td>
+    </tr>
+    <tr>
+    <td>Cleveland</td>
+    <td>Brown</td>
+    <td>$250</td>
+    </tr>
+  </table>
+
+    
+</body>
+</html>
+<br>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Table Spacing Example (Old Method)</title>
+</head>
+<body>
+    <table border="1" cellspacing="1" cellpadding="5">
+        <tr>
+            <th>Header 1</th>
+            <th>Header 2</th>
+        </tr>
+        <tr>
+            <td>Row 1, Cell 1</td>
+            <td>Row 1, Cell 2</td>
+        </tr>
+        <tr>
+            <td>Row 2, Cell 1</td>
+            <td>Row 2, Cell 2</td>
+        </tr>
+    </table>
+</body>
+</html>

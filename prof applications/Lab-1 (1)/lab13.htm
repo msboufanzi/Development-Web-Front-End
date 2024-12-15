@@ -1,0 +1,41 @@
+<!doctype html>
+<html>
+<head>
+		<meta  charset="utf-8" />
+		<title> Les images</title>
+</head>
+<body>
+	<h1> Utilisation des images: </h1> 
+	<p> 
+        img : gère les informations nécessaires pour afficher une image, à la position où on l'insère, dans le document.<br/>
+        une image peut comporter un cadre. 
+
+        <!-- fixer uniquement width ou height, permet une bonne mise à l'échelle de l'image -->
+        <!-- (alt) : nom de substitution qui sera affiché à la place de l'image -->
+        <!-- certain de ces attributs ne sont plus utilisées en html5 ( css à la place)-->
+
+        <img src="./images/logo_html5.png" width="100px"  alt="html5" border="10" align="middle">, ici le logo du langage html5 comme exemple. 
+        <br/>
+        une image peut aussi être un lien. 
+        <br/>
+        cliquez sur cette image 
+        <!-- l'attribut "target="cadre cible" définit la fenêtre dans laquelle la page cible doit s'afficher. 
+             avec "_blank" la page cible est ouverte dans une nouvelle fenêtre. -->
+
+        <a href="https://www.w3.org/" target="_blank"> 
+            <img src="./images/logo_w3c.gif" height="50px"  alt="w3c1"  align="bottom" >
+        </a>
+        , pour se rendre sur le site de w3c. 
+        <br/>
+        cette image n'existe pas 
+        <!-- l'attribut width="valeur" en pixels définit la largeur.
+            l'attribut height="valeur" en pixels définit la hauteur.
+            l'attribut hspace="valeur" en pixels définit un espacement horizontal entre l'image et le texte.
+            l'attribut vspace="valeur" en pixels définit un espacement vertical entre l'image et le texte.
+            l'attribut border="valeur en pixels" applique une bordure autour d'une image
+            align="type d'alignement" permet l'alignement d'un texte par rapport à une image (top, middle, bottom, left et right).
+            . -->
+             <img src="./images/logo.gif" height="50px"  alt="w3c2"  align="top" > ....
+	</p>
+</body>
+</html>

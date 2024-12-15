@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    
+    <div class="tutorial-button-container">
+  <button class="tutorial-button" onclick="openTutorial()">
+    <span class="tutorial-icon">?</span>
+    <span class="tutorial-text">Tutoriel</span>
+  </button>
+</div>
+
+
+    <table class="head"> 
+    <TR>
+        <td>
+            <div class="buttons1">
+             <img onClick="swapleft()" class="left_image" height="50" src="iconr.png" />
+             <img onClick="swapright()" class="right_image" height="50" src="iconr.png" />
+            </div>
+        </td>
+
+    <td >
+    <h1 id="Irregular">English:Irregular verbs </h1>
+    </td> 
+    </TR>
+    </table>
+   
+
+
+
+    <div id="left_panel" class="left_panel">
+        <table border="2" height="100px" width="100px" id="data_table" class="words_table">
+        </table>
+    </div>
+
+
+
+
+
+
+    
+    <div id="right_panel" class="right_panel">
+
+        <div class="blue_bar">
+            <img onClick="hide()" id="blue_bar_image" class="blue_bar_image" height="50" src="iconb.png"/>
+            <img onClick="show()" id="hide_blue_bar_image" class="hide_blue_bar_image" height="50" src="iconb.png"/>
+        </div>
+
+        <div id="right_bar_main_bar" class="right_bar_main_bar">
+            <div class="right_bar_top">
+                <button onclick="addVerb()">add a verb</button>
+                <input type="text" id="searsh_input">
+                <button onclick="search()">Find</button>
+                <button id="tutorial-btn" onclick="openTutorial()" style="
+                    background-color: #93dbf3;
+                    border: 2px solid black;
+                    padding: 5px 15px;
+                    font-weight: bold;
+                    cursor: pointer;
+                    border-radius: 5px;
+                    float: right;
+                    margin-right: 20px;
+                ">
+                    Tutorial
+                </button>
+            </div>
+            <div id="links_div" class="links_div">
+                    <ul onLoad="display_letters()" id="link_list"  class="link_list">
+                    </ul>
+            </div>
+            <div class="right_bar_buttom">
+                <p>Statistics</p>
+                <div  onClick="getListOfLetter()" id="statistisc">
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+
+
+
+
+
+    
+</body>
+<script type="text/javascript" src="scripts.js"></script>
+
+
+</html>
